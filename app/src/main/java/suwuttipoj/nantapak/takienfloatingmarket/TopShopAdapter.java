@@ -67,10 +67,22 @@ public class TopShopAdapter extends BaseAdapter{
 
         //Show View
         nameTextView.setText(nameStrings[i]);
-        detailTextView.setText(detailStrings[i]);
-        scoreTextView.setText(scoreStrings[i]);
+        detailTextView.setText(setupDetail(detailStrings[i]));
+        scoreTextView.setText(scoreStrings[i] + " คะแนน");
         Picasso.with(context).load(iconStrings[i]).into(imageView);
 
         return view1;
+    }
+
+    private String setupDetail(String detailString) {
+
+        String strResult = null;
+
+        if (detailString.length() <= 80) {
+            strResult = detailString;
+        } else {
+            strResult = detailString.substring(0, 40) + "...";
+        }
+        return strResult;
     }
 }   // Main Class

@@ -42,8 +42,6 @@ public class HistoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_history2);
 
 
-
-
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -56,12 +54,12 @@ public class HistoryActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
 
-
     }
 
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -79,6 +77,7 @@ public class HistoryActivity extends AppCompatActivity {
      * A placeholder fragment containing a simple view.
      */
     public static class PlaceholderFragment extends Fragment {
+
         /**
          * The fragment argument representing the section number for this
          * fragment.
@@ -103,23 +102,16 @@ public class HistoryActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-
             if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
                 View rootView = inflater.inflate(R.layout.tab2_htr_wtk, container, false);
                 return rootView;
-            }
-            else if (getArguments().getInt(ARG_SECTION_NUMBER) == 2)
-            {
+            } else if (getArguments().getInt(ARG_SECTION_NUMBER) == 2) {
                 View rootView = inflater.inflate(R.layout.tab1_htr_wtk, container, false);
                 return rootView;
-            }
-            else if (getArguments().getInt(ARG_SECTION_NUMBER) == 3)
-            {
+            } else if (getArguments().getInt(ARG_SECTION_NUMBER) == 3) {
                 View rootView = inflater.inflate(R.layout.tab3_htr_mk, container, false);
                 return rootView;
-            }
-            else
-            {
+            } else {
                 View rootView = inflater.inflate(R.layout.fragment_history, container, false);
                 TextView textView = (TextView) rootView.findViewById(R.id.section_label);
                 textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
@@ -127,11 +119,14 @@ public class HistoryActivity extends AppCompatActivity {
             }
 
         }
+
+
     }
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.     */
+     * one of the sections/tabs/pages.
+     */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -153,15 +148,18 @@ public class HistoryActivity extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return "ประวัติวัดตะเคียน";
-                case 1:
-                    return "ประวัติหลวงปู่แย้ม";
-                case 2:
-                    return "ประวัติตลาดน้ำ";
+
+                switch (position) {
+                    case 0:
+                        return "ประวัติวัดตะเคียน";
+                    case 1:
+                        return "ประวัติหลวงปู่แย้ม";
+                    case 2:
+                        return "ประวัติตลาดน้ำ";
+                }
+                return null;
+
+
             }
-            return null;
         }
     }
-}

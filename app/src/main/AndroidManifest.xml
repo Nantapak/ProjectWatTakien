@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="suwuttipoj.nantapak.takienfloatingmarket">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -19,24 +20,22 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
+        android:name=".MainApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:label="TakienFloatingMarket"
         android:supportsRtl="true"
         android:theme="@style/TabHistory">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".FullscreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SignUpActivity"
-            android:theme="@style/TabHistory" />
-        <activity
-            android:name=".LoginActivity"
-            android:theme="@style/TabHistory" />
+        <!--<activity-->
+            <!--android:name=".SignUpActivity"-->
+            <!--android:theme="@style/TabHistory" />-->
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -45,35 +44,176 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+
 
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"
             android:theme="@style/TabHistory" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".WattakienActivity" />
-        <activity android:name=".InformationActivity" />
-        <activity android:name=".ReligiousActivity" />
+        <activity android:name=".MainActivity2" />
+        <!--<activity android:name=".WattakienActivity" />-->
+        <!--<activity android:name=".InformationActivity" />-->
+        <!--<activity android:name=".ReligiousActivity" />-->
         <activity
             android:name=".MarketfloatingActivity"
             android:theme="@style/TabHistory" />
-        <activity android:name=".Tab1_htr_wtk" />
-        <activity android:name=".Tab2_htr_wtk" />
+
         <activity
             android:name=".HistoryActivity"
             android:label="@string/title_activity_history"
             android:theme="@style/TabHistory" />
         <activity
-            android:name=".DetailShopActivity"
+            android:name=".HistoryActivity2"
+            android:label="@string/title_activity_history"
             android:theme="@style/TabHistory" />
+        <!--<activity-->
+            <!--android:name=".DetailShopActivity"-->
+            <!--android:theme="@style/TabHistory" />-->
         <activity
             android:name=".TabsMarketActivity"
             android:label="@string/title_activity_tabs_market"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/TabHistory" />
         <activity android:name=".EditUser"></activity>
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            tools:replace="android:value"/>
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCF5BnIt2DosbRga7H4FxbHW2gp_wINexw" />
+        <activity
+            android:name=".Travel_MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/TabHistory">
+
+        </activity>
+        <activity
+            android:name=".Travel_Login"
+            android:label="@string/app_name">
+
+        </activity>
+
+        <activity
+            android:name=".Travel_Login2"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <activity
+            android:name=".Travel_MainActivity_CasTom"
+            android:label="@string/app_name"
+            android:theme="@style/TabHistory"
+            >
+
+        </activity>
+        <activity android:name=".Travel_WebviewActivity"></activity>
+        <activity
+            android:name=".Travel_Register"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+        <activity
+            android:name=".Mainactivity_News"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+        <activity
+            android:name=".Mainactivity_Psalm"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+        <activity
+            android:name=".Select_Lng"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".Travel_Favorite_list"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+
+
+        <activity
+            android:name=".Travel_Profile_Update"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+        <activity
+            android:name=".Travel_Profile"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+        <activity
+            android:name=".Travel_SuccessActivity"
+            android:label="@string/app_name"
+            android:theme="@style/TabHistory">
+
+        </activity>
+        <activity
+            android:name=".SuccessActivity"
+            android:label="@string/app_name"
+            android:theme="@style/TabHistory">
+
+        </activity>
+        <activity
+            android:name=".SuccessActivitySAT"
+            android:label="@string/app_name"
+            android:theme="@style/TabHistory">
+
+        </activity>
+
+        <activity
+            android:name=".Travel_Maps"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+
+
+        <activity
+            android:name=".Travel_MainactivityMain2"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+        <activity
+            android:name=".Travel_MainactivityMain2en"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+
+        <activity
+            android:name="com.com.grafixartist.gallery.Image_DetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <service
+            android:name=".Travel_PushNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="androidwarriors.gcmdemo" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

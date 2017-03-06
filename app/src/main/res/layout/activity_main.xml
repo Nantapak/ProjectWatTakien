@@ -10,12 +10,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="suwuttipoj.nantapak.takienfloatingmarket.MainActivity"
-    android:background="@drawable/backgroundmain03">
+    android:background="@drawable/backgroundmainth">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="145dp">
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="122dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,34 +26,28 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_height="wrap_content"
                 android:id="@+id/imageView2"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:elevation="0dp"
                 android:background="@drawable/history01"
-                android:onClick="clickHistory" />
+                android:onClick="clickHistory"
+                android:layout_height="200dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:id="@+id/imageView4"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:onClick="clickReligious"
-                    app:srcCompat="@drawable/religious01" />
+
 
                 <ImageView
                     android:id="@+id/imageView5"
                     android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="177dp"
+                    android:layout_width="match_parent"
                     android:onClick="clickInformation"
-                    app:srcCompat="@drawable/information01" />
+                    app:srcCompat="@drawable/information01"
+                    android:layout_height="180dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -59,20 +56,20 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
                     app:srcCompat="@drawable/mapgotowat01"
                     android:id="@+id/imageView"
                     android:layout_weight="1"
-                    android:onClick="clickMaps" />
+                    android:onClick="clickMaps"
+                    android:layout_height="180dp" />
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_weight="1"
                     android:onClick="clickMember"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    app:srcCompat="@drawable/login01" />
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/login01"
+                    android:layout_height="180dp" />
 
             </LinearLayout>
 
@@ -82,20 +79,20 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
                     app:srcCompat="@drawable/marketfloting01"
                     android:id="@+id/imageView9"
                     android:onClick="clickMarketfloting"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:layout_height="180dp" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
                     app:srcCompat="@drawable/wattakien01"
                     android:id="@+id/imageView8"
                     android:onClick="clickWattakien"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:layout_height="180dp" />
 
             </LinearLayout>
         </LinearLayout>

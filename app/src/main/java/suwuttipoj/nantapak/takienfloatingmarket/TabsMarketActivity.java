@@ -131,18 +131,18 @@ public class TabsMarketActivity extends AppCompatActivity {
                             getContext(), iconStrings, nameStrings);
                     listView.setAdapter(shopAdapter);
 
-                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                            Intent intent = new Intent(getContext(), DetailShopActivity.class);
-                            intent.putExtra("Image", iconStrings[position]);
-                            intent.putExtra("Name", nameStrings[position]);
-                            intent.putExtra("Detail", detailStrings[position]);
-                            startActivity(intent);
-
-                        }       //onItemClick
-                    });
+//                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                        @Override
+//                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//                            Intent intent = new Intent(getContext(), DetailShopActivity.class);
+//                            intent.putExtra("Image", iconStrings[position]);
+//                            intent.putExtra("Name", nameStrings[position]);
+//                            intent.putExtra("Detail", detailStrings[position]);
+//                            startActivity(intent);
+//
+//                        }       //onItemClick
+//                    });
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -183,19 +183,20 @@ public class TabsMarketActivity extends AppCompatActivity {
                             iconStrings, nameStrings, detailStrings, scoreStrings);
                     listView.setAdapter(topShopAdapter);
 
-                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                            Intent intent = new Intent(getContext(), DetailShopActivity.class);
-                            intent.putExtra("Name", nameStrings[position]);
-                            intent.putExtra("Image", iconStrings[position]);
-                            intent.putExtra("Detail", detailStrings[position] + "Score =" + scoreStrings[position]);
-                            startActivity(intent);
-
-
-                        }// onItemClick
-                    });
+//                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                        @Override
+//                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//                            Intent intent = new Intent(getContext(), DetailShopActivity.class);
+//                            intent.putExtra("Name", nameStrings[position]);
+//                            intent.putExtra("Image", iconStrings[position]);
+//                            intent.putExtra("Detail", detailStrings[position]);
+//                            intent.putExtra("Score", scoreStrings[position] + " คะแนน");
+//                            startActivity(intent);
+//
+//
+//                        }// onItemClick
+//                    });
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -206,7 +207,7 @@ public class TabsMarketActivity extends AppCompatActivity {
             }   // end Part 2
             else if (getArguments().getInt(ARG_SECTION_NUMBER) == 3)
             {
-                View rootView = inflater.inflate(R.layout.tab3_htr_mk, container, false);
+                View rootView = inflater.inflate(R.layout.activity_diagramth, container, false);
                 return rootView;
             }
             else

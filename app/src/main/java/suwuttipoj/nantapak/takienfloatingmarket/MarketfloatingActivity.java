@@ -54,18 +54,18 @@ public class MarketfloatingActivity extends AppCompatActivity{
                     MarketfloatingActivity.this, iconStrings, nameStrings);
             listView.setAdapter(shopAdapter);
 
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                    Intent intent = new Intent(MarketfloatingActivity.this, DetailShopActivity.class);
-                    intent.putExtra("Image", iconStrings[position]);
-                    intent.putExtra("Name", nameStrings[position]);
-                    intent.putExtra("Detail", detailStrings[position]);
-                    startActivity(intent);
-
-                }       //onItemClick
-            });
+//            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                @Override
+//                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//                    Intent intent = new Intent(MarketfloatingActivity.this, DetailShopActivity.class);
+//                    intent.putExtra("Image", iconStrings[position]);
+//                    intent.putExtra("Name", nameStrings[position]);
+//                    intent.putExtra("Detail", detailStrings[position]);
+//                    startActivity(intent);
+//
+//                }       //onItemClick
+//            });
 
         } catch (Exception e) {
             e.printStackTrace();

@@ -76,7 +76,7 @@ public class ShopAdapter extends BaseAdapter{
         if (detailString.length() <= 80) {
             strResult = detailString;
         } else {
-            strResult = detailString.substring(0, 80) + "...";
+            strResult = detailString.substring(0, 40) + "...";
         }
         return strResult;
     }

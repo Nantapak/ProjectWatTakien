@@ -9,9 +9,9 @@
 
 
     <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/history_wat01"
-        android:id="@+id/imageView6" />
+        android:background="@drawable/prawadyam_th" />
 
 </LinearLayout>

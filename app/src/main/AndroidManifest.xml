@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:name=".MainApplication"
+        android:name=".InitialFonts"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="TakienFloatingMarket"
@@ -55,9 +55,9 @@
         <!--<activity android:name=".WattakienActivity" />-->
         <!--<activity android:name=".InformationActivity" />-->
         <!--<activity android:name=".ReligiousActivity" />-->
-        <activity
-            android:name=".MarketfloatingActivity"
-            android:theme="@style/TabHistory" />
+        <!--<activity-->
+            <!--android:name=".MarketfloatingActivity"-->
+            <!--android:theme="@style/TabHistory" />-->
 
         <activity
             android:name=".HistoryActivity"
@@ -70,11 +70,11 @@
         <!--<activity-->
             <!--android:name=".DetailShopActivity"-->
             <!--android:theme="@style/TabHistory" />-->
-        <activity
-            android:name=".TabsMarketActivity"
-            android:label="@string/title_activity_tabs_market"
-            android:theme="@style/TabHistory" />
-        <activity android:name=".EditUser"></activity>
+        <!--<activity-->
+            <!--android:name=".TabsMarketActivity"-->
+            <!--android:label="@string/title_activity_tabs_market"-->
+            <!--android:theme="@style/TabHistory" />-->
+        <!--<activity android:name=".EditUser"></activity>-->
         <meta-data android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"
             tools:replace="android:value"/>
@@ -170,12 +170,12 @@
 
         </activity>
 
-        <activity
-            android:name=".Travel_Maps"
-            android:label="@string/app_name"
-            >
+        <!--<activity-->
+            <!--android:name=".Travel_Maps"-->
+            <!--android:label="@string/app_name"-->
+            <!--&gt;-->
 
-        </activity>
+        <!--</activity>-->
 
 
         <activity

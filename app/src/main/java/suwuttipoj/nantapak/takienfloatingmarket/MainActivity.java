@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private CustomTabActivityHelper mCustomTabActivityHelper;
 
-    private String URL = "http://drive-utcc.com/Manage/";
+    private String URL = "http://www.nantapak.wtkarea.com/Wattakien/index.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

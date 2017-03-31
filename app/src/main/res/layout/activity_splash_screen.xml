@@ -6,19 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="suwuttipoj.nantapak.takienfloatingmarket.SplashScreen"
-    android:background="#FFFFFF">
+    >
 
-        <LinearLayout
-            android:orientation="vertical"
+        <pl.droidsonroids.gif.GifImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:id="@+id/imageView14"
-                    android:background="@drawable/splashlist"
-                    android:layout_height="250dp"
-                    android:layout_marginTop="150dp" />
-        </LinearLayout>
+            android:layout_height="match_parent"
+            android:background="@drawable/sp" />
 
 </RelativeLayout>

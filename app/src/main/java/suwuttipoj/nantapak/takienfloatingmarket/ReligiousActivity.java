@@ -1,7 +1,7 @@
 //package suwuttipoj.nantapak.takienfloatingmarket;
 //
-//import android.support.v7.app.AppCompatActivity;
-//import android.os.Bundle;
+//        import android.support.v7.app.AppCompatActivity;
+//        import android.os.Bundle;
 //
 //public class ReligiousActivity extends AppCompatActivity {
 //

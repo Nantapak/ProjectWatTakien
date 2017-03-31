@@ -14,16 +14,16 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         // Load the ImageView that will host the animation and
         // set its background to our AnimationDrawable XML resource
-        ImageView img = (ImageView)findViewById(R.id.imageView14);
-        img.setBackgroundResource(R.drawable.splashlist);
-        // Get the background, which has been compiled to an AnimationDrawable object.
-        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
+//        ImageView img = (ImageView)findViewById(R.id.imageView14);
+//        img.setBackgroundResource(R.drawable.splashlist);
+//        // Get the background, which has been compiled to an AnimationDrawable object.
+//        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
         // Start the animation (looped playback by default).
-        frameAnimation.start();
+//        frameAnimation.start();
         new Thread(new Runnable() {
             public void run() {
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(5000);
                 } catch (InterruptedException e) {
                 }
                 Intent intent = new Intent(SplashScreen.this, MainActivity.class);
